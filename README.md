@@ -11,6 +11,29 @@ This project delivers an end-to-end analytics solution requested by the AEMR Man
 
 ---
 
+## Key Findings
+1. Forced outages grew 28.3% from 2016 to 2017 (1,264 to 1,622)
+   while all other outage types combined fell 17.7%. Forced
+   outages are now 74.7% of approved outages, up from 65.5%.
+2. Three of roughly 20 providers (GW, AURICON, MELK) hold about
+   60% of forced-outage energy loss (23.0%, 21.2%, 15.8%).
+3. Frequency and duration are separate problems. AURICON and GW
+   have the most forced events, while EUCT, WGUTD, and MELK have
+   the longest average forced outages.
+
+---
+
+## Data and Limitations
+- Source: AEMR outage table, calendar years 2016-2017.
+- Filter: approved outages only, since cancelled or rejected
+  outages do not affect the grid.
+- Duration: calculated from start and end timestamps with
+  JULIANDAY, rounded to 2 decimals.
+- Limits: two years of data cannot separate a trend from a
+  one-year swing, and energy loss is summed in MW across events.
+
+---
+
 ## 🛠️ Tech Stack & Advanced Skills
 *   **Database Querying & Optimization:** SQL (Using `%%sql` magics in Python to query the AEMR relational database).
 *   **Core SQL Techniques:** Common Table Expressions (CTEs), Subqueries, Multi-table Joins, Aggregations, Case Statements, and Window Functions.
